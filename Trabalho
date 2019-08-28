@@ -1,0 +1,144 @@
+Exercicios do Site : https://wiki.python.org.br/ListaDeExercicios
+
+
+
+num1 = int(input('Informe um numero: '))
+num2 = int(input('Informe outro numero: '))
+num3 = int(input('Informe mais um numero: '))
+if (num1 == num2) and (num1 == num3):
+print ('Os numeros sao iguais')
+elif (num1 > num2) and (num1 > num3):
+print ('O maior numero é:', num1)
+elif (num2 > num3):
+print ('O maior numero é:', num2)
+else:
+print ('O maior numero é:', num3)
+
+Exercicio #11
+salario = float(input('Informe o valor do salario do colaborador: '))
+if (salario <= 280):
+percentual = 20
+elif (salario <= 700):
+percentual = 15
+elif (salario <= 1500):
+percentual = 10
+else:
+percentual = 5
+aumento = salario * (percentual / 100.0)
+novoSalario = salario + aumento
+print(salario)
+print(percentual)
+print(aumento)
+print(novoSalario)
+
+Exercicio#13
+numero_dia = int(input('Informe um numero para saber o dia da semana: '))
+if (numero_dia == 1):
+print ('Domingo')
+elif (numero_dia == 2):
+print ('Segunda')
+elif (numero_dia == 3):
+print ('Terca')
+elif (numero_dia == 4):
+print ('Quarta')
+elif (numero_dia == 5):
+print ('Quinta')
+elif (numero_dia == 6):
+print ('Sexta')
+elif (numero_dia == 7):
+print ('Sabado')
+else:
+print ('Valor invalido')
+
+Exercicio #14
+
+nota1 = float(input('Informe o valor da primeira nota: '))
+nota2 = float(input('Informe o valor da segunda nota: '))
+media = (nota1 + nota2) / 2
+if (media < 4):
+print ('E')
+aprovado = False
+elif (media < 6):
+print ('D')
+aprovado = False
+elif (media < 7.5):
+print ('C')
+aprovado = True
+elif (media < 9):
+print ('B')
+aprovado = True
+else:
+print ('A')
+aprovado = True
+if (aprovado):
+print ('APROVADO')
+else:
+print ('REPROVADO')
+
+Exercicio #15
+print ('Informe os valores dos lados do triangulo')
+lado1 = float(input('Lado 1: '))
+lado2 = float(input('Lado 2: '))
+lado3 = float(input('Lado 3: '))
+if (lado1 > (lado2 + lado3)) or (lado2 > (lado1 + lado3))\
+or (lado3 > (lado1 + lado2)):
+ehTriangulo = False
+else:
+ehTriangulo = True
+if (ehTriangulo):
+if (lado1 == lado2) and (lado2 == lado3):
+print ('Triangulo Equilatero')
+elif (lado1 == lado2) or (lado1 == lado2) or (lado2 == lado3):
+print ('Triangulo Isosceles')
+else:
+print ('Triangulo Escaleno')
+
+Exercicio#20
+nota1 = float(input('Informe a primeira nota: '))
+nota2 = float(input('Informe a segunda nota: '))
+nota3 = float(input('Informe a terceira nota: '))
+media = (nota1 + nota2 + nota3) / 3.0
+print (media)
+if (media == 10):
+print ('Aprovado com Distincao')
+elif (media >= 7):
+print ('Aprovado')
+else:
+print ('Reprovado')
+
+Exercicio#21
+
+valor = int(input('Informe o valor que deseja sacar: '))
+
+if (valor < 10) or (valor > 600):
+
+print ('Valor invalido para saque')
+
+else:
+
+notas100 = valor / 100
+
+notas50 = (valor - (notas100 * 100)) / 50
+
+notas10 = (valor - (notas100 * 100) - (notas50 * 50)) / 10
+
+notas5 = (valor - (notas100 * 100) - (notas50 * 50) - (notas10 * 10)) / 5
+
+notas1 = valor - (notas100 * 100) - (notas50 * 50) -  (notas10 * 10) - (notas5 * 5)
+
+print ('Notas de 100:', notas100)
+
+print ('Notas de  50:', notas50)
+
+print ('Notas de  10:', notas10)
+
+print ('Notas de   5:', notas5)
+
+print ('Notas de   1:', notas1)
+
+exercicio#22
+valor = int(input('Informe um numero: '))
+if (valor % 2 == 0):
+print ('Valor é par')
+else:
+print ('Valor é impar')
